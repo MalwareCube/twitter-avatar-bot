@@ -7,6 +7,8 @@ This tool uses the [twitter-api-v2](https://www.npmjs.com/package/twitter-api-v2
 
 This repo is very easy to configure for your own use, with easy options to alter the frequency of running via cron, as well as an easy way to load images to cycle through.
 
+Once configured to your liking, it's an extremely lightweight script that can be hosted as a worker on the cloud platform of your choice ([Heroku](https://heroku.com), [Netlify](https://netlify.com), etc.).
+
 ## Change the frequency of profile picture updates
 The [cron](https://www.npmjs.com/package/cron) module is used to schedule the API POST requests, which can easily be modified to your liking. By default, the tool runs once an hour, on the hour, by the following syntax:
 `new CronJob("0 * * * *"`
