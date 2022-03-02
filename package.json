@@ -1,7 +1,7 @@
 {
   "name": "twitter-avatar-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple node.js script to automatically change your Twitter profile picture on a configurable frequency with images from an images directory.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
