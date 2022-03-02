@@ -6,7 +6,7 @@ const CronJob = require("cron").CronJob;
 const ppUpdate = async () => {
     try {
         //Select a random image index
-        const imagesLength = 9;
+        const imagesLength = 10;
         const randomIndex = Math.floor(Math.random() * imagesLength);
         await rwClient.v1.updateAccountProfileImage('./images/' + randomIndex + '.png')
         console.log("Profile picture updated to " + randomIndex + ".png")
