@@ -22,7 +22,9 @@ Once a day at 8am:
 `new CronJob("0 8 * * *"`
 
 ## Managing images
-The tool cycles through random profile pictures in the `/images` directory using a `Math.random()` function. This tool was purpose-built to cycle images at random, but if you'd like your images to be cycled sequentially by filename, that would require some changes to the `index.js` logic. The tool does not use any directory browsing modules to read filenames. Rather, filenames should be sequentially numbered. For example: `1.png`, `2.png`, `3.png` ... etc. Additionally, the `imagesLength` value must be updated to match the number of images in the `/images` directory. Again, this was purpose-built and avoids using node to read files and directories.
+The tool cycles through random profile pictures in the `/images` directory using a `Math.random()` function. This tool was purpose-built to cycle images at random, but if you'd like your images to be cycled sequentially by filename, that would require some changes to the `index.js` logic. The tool does not use any directory browsing modules to read filenames. Rather, filenames should be sequentially numbered. For example: `1.png`, `2.png`, `3.png` ... etc. 
+
+Additionally, the `imagesLength` variable in `index.js` must be updated to match the number of images in the `/images` directory. Again, this was purpose-built and avoids using node to read files and directories.
 
 If the file type needs to be changed (for example, using `.jpg` instead of `.png` files, simply change that hardcoded value in `index.js`).
 
