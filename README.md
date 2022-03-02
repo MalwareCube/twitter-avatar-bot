@@ -1,7 +1,7 @@
 # twitter-avatar-bot 🐦
-A simple node.js script to automatically change your Twitter profile picture on a configurable frequency with images from an "images" directory.
+A simple node.js script to automatically change your Twitter profile picture on a configurable schedule by pulling images from an "images" directory.
 
-![TwitterBot Example](https://i.imgur.com/HdCbeiZ.png
+![TwitterBot Example](https://i.imgur.com/HdCbeiZ.png)
 
 This tool uses the [twitter-api-v2](https://www.npmjs.com/package/twitter-api-v2) npm package for API requests. API keys and secrets are pulled from a `.env` file (reference `.env_sample` for the required variables). Visit the [Twitter Developer Platform](https://developer.twitter.com) to generate the required API keys.
 
@@ -10,6 +10,8 @@ This repo is very easy to configure for your own use, with easy options to alter
 ## Change the frequency of profile picture updates
 The [cron](https://www.npmjs.com/package/cron) module is used to schedule the API POST requests, which can easily be modified to your liking. By default, the tool runs once an hour, on the hour, by the following syntax:
 `new CronJob("0 * * * *"`
+
+### Other examples
 
 To have the tool run once a minute, you can just change the cron syntax:
 `new CronJob("* * * * *"`
