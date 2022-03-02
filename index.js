@@ -8,8 +8,8 @@ const ppUpdate = async () => {
         //Select a random image index
         const imagesLength = 9;
         const randomIndex = Math.floor(Math.random() * imagesLength);
-
         await rwClient.v1.updateAccountProfileImage('./images/' + randomIndex + '.png')
+        console.log("Profile picture updated to " + randomIndex + ".png")
     } catch (e) {
         console.error(e)
     }
