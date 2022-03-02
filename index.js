@@ -17,7 +17,7 @@ const ppUpdate = async () => {
 
 
 //Set the cron interval to run ppUpdate - curently set to every hour
-const job = new CronJob("* * * * *", () => {
+const job = new CronJob("0 * * * *", () => {
     ppUpdate()
 })
 
